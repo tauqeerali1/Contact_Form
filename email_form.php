@@ -19,14 +19,14 @@
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'tauqeer.ali.9934@gmail.com'; // Gmail address which you want to use as SMTP server
-        $mail->Password = 'yxhraoojdelmpynd'; // Gmail address Password
+        $mail->Username = 'your_email_id@gmail.com'; // Gmail address which you want to use as SMTP server
+        $mail->Password = 'your_email_id_password'; // Gmail address Password or Gmail APP Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = '587';
 
         $mail->isHTML(true);
         $mail->setFrom($email, $name);
-        $mail->addAddress("tauqeer.ali.9934@gmail.com");
+        $mail->addAddress("your_email_id@gmail.com");
         $mail->Subject = $name;
         $mail->Body = "<h3>Name : $name <br>Email: $email <br>Message : $body</h3>";
 
