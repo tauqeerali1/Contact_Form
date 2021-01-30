@@ -26,7 +26,7 @@
 
         $mail->isHTML(true);
         $mail->setFrom($email, $name);
-        $mail->addAddress("your_email_id@gmail.com");
+        $mail->addAddress("your_email_id@gmail.com"); // gmail address from where you have to send the data
         $mail->Subject = $name;
         $mail->Body = "<h3>Name : $name <br>Email: $email <br>Message : $body</h3>";
 
