@@ -32,7 +32,7 @@
 
         $mail->send();
             $alert = '<div class="alert-success">
-                 <span>Message Sent! Thanks you for Contacting us.</span>
+                 <span>Message Sent! Thanks you for Contacting Us.</span>
                 </div>';
                 } catch (Exception $e){
                 $alert = '<div class="alert-error">
